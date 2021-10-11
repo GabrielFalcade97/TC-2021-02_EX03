@@ -48,6 +48,10 @@ class CalculadoraDeSalario {
         if (funcionario.salarioBase >= 5000.0) {
           percentDeseconto = 30;
         }
+
+        if (funcionario.salarioBase < 5000.0) {
+            percentualDesconto = 20;
+        }
         return (funcionario.salarioBase * (100 - percentDeseconto)) / 100;
 
         
