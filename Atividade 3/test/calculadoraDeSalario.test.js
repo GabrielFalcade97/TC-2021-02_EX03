@@ -42,4 +42,14 @@ describe("CalculadoraDeSalario", () => {
     expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(2520.0);
   });
 
+  test("validando o salario do dba >= 2000.00", () => {
+    let funcionario = {
+      nome: "Roberto Carlos",
+      email: "carlosRoberto@mail.com",
+      salarioBase: 3500.0,
+      cargo: cargos.DBA,
+    };
+    expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(2334.78);
+  });
+
 });
