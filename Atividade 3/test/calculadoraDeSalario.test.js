@@ -72,4 +72,14 @@ describe("CalculadoraDeSalario", () => {
     expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(3780);
   });
 
+  test("validando o salario de testador < 2000.00", () => {
+    let funcionario = {
+      nome: "Harry Granger",
+      email: "harryg@mail.com",
+      salarioBase: 1750.0,
+      cargo: cargos.TESTADOR,
+    };
+    expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(1482.59);
+  });
+
 });
