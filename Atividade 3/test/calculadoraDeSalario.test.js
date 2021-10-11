@@ -62,4 +62,14 @@ describe("CalculadoraDeSalario", () => {
     expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(1559.58);
   });
 
+  test("validando o salario de testador >= 2000.00", () => {
+    let funcionario = {
+      nome: "Daniel Rodrigues",
+      email: "danrodrigues@mail.com",
+      salarioBase: 4895.0,
+      cargo: cargos.TESTADOR,
+    };
+    expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(3780);
+  });
+
 });
