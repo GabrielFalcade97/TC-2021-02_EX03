@@ -37,6 +37,10 @@ class CalculadoraDeSalario {
           percentualDesconto = 25;
         }
 
+        if (funcionario.salarioBase < 2000.0) {
+            percentualDesconto = 15;
+        }
+
         return (funcionario.salarioBase * (100 - percentualDesconto)) / 100;
     }
     }
