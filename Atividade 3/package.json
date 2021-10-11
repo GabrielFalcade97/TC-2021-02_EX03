@@ -1,0 +1,11 @@
+{
+  "name": "atividade-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CalculadoraDeSalario.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC"
+}
