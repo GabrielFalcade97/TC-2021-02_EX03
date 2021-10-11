@@ -31,4 +31,15 @@ describe("CalculadoraDeSalario", () => {
     };
     expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(2800.0);
   });
+
+  test("validando o salario do desenvolvedor < 3000.00", () => {
+    let funcionario = {
+      nome: "Valter Dias",
+      email: "vDias@mail.com",
+      salarioBase: 2870.0,
+      cargo: cargos.DESENVOLVEDOR,
+    };
+    expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(2520.0);
+  });
+
 });
