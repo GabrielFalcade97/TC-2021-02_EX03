@@ -23,11 +23,13 @@ class CalculadoraDeSalario {
           percentualDesconto = 10;
         }
 
-        return (funcionario.salarioBase * (100 - percentualDesconto)) / 100;
-        
         case "dba":
         if (funcionario.salarioBase >= 2000.0) {
           percentDeseconto = 25;
+        }
+
+        if (funcionario.salarioBase < 2000.0) {
+            percentualDesconto = 15;
         }
 
         return (funcionario.salarioBase * (100 - percentualDesconto)) / 100;
