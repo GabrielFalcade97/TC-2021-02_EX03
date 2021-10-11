@@ -81,5 +81,16 @@ describe("CalculadoraDeSalario", () => {
     };
     expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(1482.59);
   });
+  
+  test("validando o salario de gerente >= 5000.00", () => {
+    let funcionario = {
+      nome: "Ronaldo Wesley",
+      email: "wronaldo@mail.com",
+      salarioBase: 10000.0,
+      cargo: cargos.GERENTE,
+    };
+    expect(calculadoraDeSalario.calculaSalario(funcionario)).toBe(8500);
+  });
+
 
 });
